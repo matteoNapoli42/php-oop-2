@@ -8,7 +8,10 @@ Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati.
 
 -->
-
+<?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +25,8 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 </head>
 
 <body>
+    <h1 class="text-center my-2">E-Commerce Prodotti per animali</h1>
+    <?php require __DIR__ . '/Partials/Dogs.php' ?>
 
 </body>
 
