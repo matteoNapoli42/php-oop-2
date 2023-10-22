@@ -7,15 +7,17 @@ class Product
     public $categoryIcon;
     public $productType;
     public $price;
+    public $inStock;
 
     //Constructor
-    public function __construct(string $image, string $title, int $categoryIcon, string $productType, float $price)
+    public function __construct(string $image, string $title, object $categoryIcon, string $productType, float $price, bool $inStock)
     {
         $this->image = $image;
         $this->title = $title;
         $this->categoryIcon = $categoryIcon;
         $this->productType = $productType;
         $this->price = $price;
+        $this->inStock = $inStock;
     }
 
     //Getter Methods
@@ -42,5 +44,10 @@ class Product
     public function getPrice()
     {
         return $this->price;
+    }
+
+    public function getStock()
+    {
+        return $this->inStock;
     }
 }
