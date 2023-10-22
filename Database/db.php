@@ -1,9 +1,9 @@
 <?php
-require __DIR__ . '/../Models/Categories.php';
-require __DIR__ . '/../Models/Product.php';
-require __DIR__ . '/../Models//Kennel.php';
-require __DIR__ . '/../Models//Toy.php';
-require __DIR__ . '/../Models//Food.php';
+require_once __DIR__ . '/../Models/Categories.php';
+require_once __DIR__ . '/../Models/Product.php';
+require_once __DIR__ . '/../Models//Kennel.php';
+require_once __DIR__ . '/../Models//Toy.php';
+require_once __DIR__ . '/../Models//Food.php';
 
 $dogIcon = new Category('Dog', '<i class="fa-solid fa-dog"></i>');
 $catIcon = new Category('Cat', '<i class="fa-solid fa-cat"></i>');
