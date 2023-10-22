@@ -27,6 +27,8 @@ error_reporting(E_ALL);
 <body>
     <h1 class="text-center my-2">E-Commerce Prodotti per animali</h1>
     <?php require __DIR__ . '/Partials/Dogs.php' ?>
+    <?php require __DIR__ . '/Partials/Cats.php' ?>
+
 
 </body>
 
