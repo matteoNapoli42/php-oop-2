@@ -1,5 +1,7 @@
 <?php
 
+
+require __DIR__ . '/../Traits/ProductPrice.php';
 class Product
 {
     public $image;
@@ -8,6 +10,9 @@ class Product
     public $productType;
     public $price;
     public $inStock;
+    public $pCode;
+    use ProductPrice;
+
 
     //Constructor
     public function __construct(string $image, string $title, object $categoryIcon, string $productType, float $price, bool $inStock)

@@ -28,7 +28,7 @@ $food1 = new Food('', 'Croccantini di carne', $dogIcon, 'Food', 23.99, false);
 
 //Kennel
 $kennel3 = new Kennel('', 'Cuccia per cani Woody con tetto piano', $catIcon, 'Kennel', 85.99, true);
-$kennel4 = new Kennel('', 'Cuccia per cani Spike Classic', $catIcon, 'Kennel', 72.99, false);
+$kennel4 = new Kennel('', 'Cuccia per cani Spike Classic', $catIcon, 'Kennel', 0, false);
 
 //Toy
 $toy2 = new Toy('', 'Pelushe Squeak', $catIcon, 'Toy', 11.99, false);
@@ -43,3 +43,11 @@ $toy2 = new Toy('', 'Pelushe Squeak', $catIcon, 'Toy', 11.99, false);
 $dbProducts = [];
 
 array_push($dbProducts, $kennel1, $kennel2, $toy1, $kennel3, $kennel4, $toy2, $food1);
+
+foreach ($dbProducts as $product) {
+   try {
+      $product->checkPrice();
+   } catch (Exception $e) {
+      echo "Prezzo troppo basso";
+   }
+}
