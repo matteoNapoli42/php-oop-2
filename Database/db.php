@@ -48,6 +48,7 @@ foreach ($dbProducts as $product) {
    try {
       $product->checkPrice();
    } catch (Exception $e) {
-      echo "Prezzo troppo basso";
+      $product->errMessage = "Errore del server";
+      echo "Ciao";
    }
 }

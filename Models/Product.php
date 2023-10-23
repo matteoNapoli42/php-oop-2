@@ -10,7 +10,7 @@ class Product
     public $productType;
     public $price;
     public $inStock;
-    public $pCode;
+    public $errMessage;
     use ProductPrice;
 
 
@@ -23,6 +23,7 @@ class Product
         $this->productType = $productType;
         $this->price = $price;
         $this->inStock = $inStock;
+        $this->errMessage = null;
     }
 
     //Getter Methods

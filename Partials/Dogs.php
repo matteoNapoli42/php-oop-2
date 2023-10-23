@@ -2,7 +2,7 @@
 
 //('', 'Cuccia per cani Woody con tetto piano', $dogIcon, 'Kennel', 85.99, true); Product example
 
-require __DIR__ . '/../Database/db.php';
+require_once __DIR__ . '/../Database/db.php';
 ?>
 
 <h2 class="text-center my-4 ">Cani</h2>

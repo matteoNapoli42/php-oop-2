@@ -9,7 +9,7 @@ organizzate il progetto come visto stamattina a lezione usando varie sottocartel
 
 -->
 <?php
-ini_set('display_errors', 10);
+ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 require __DIR__ . '/Database/db.php';
@@ -28,11 +28,8 @@ require __DIR__ . '/Database/db.php';
 
 <body>
     <h1 class="text-center my-2">E-Commerce Prodotti per animali</h1>
-    <?php require __DIR__ . '/Partials/Dogs.php' ?>
-    <?php require __DIR__ . '/Partials/Cats.php' ?>
-
-
-
+    <?php require_once __DIR__ . '/Partials/Dogs.php' ?>
+    <?php require_once __DIR__ . '/Partials/Cats.php' ?>
 </body>
 
 </html>
